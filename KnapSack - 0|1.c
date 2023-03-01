@@ -29,13 +29,13 @@ int main() {
     scanf("%d", &n);
     printf("Enter Weight: ");
     scanf("%d", &W);
-     
-    int wt[n], val[n];
-    for (int i = 0; i < n; i++) {
-    printf("Enter weight of item: ");
-    scanf("%d", &wt[i]);
-    printf("Enter value of item: ");
-    scanf("%d", &val[i]);
+    printf("\n");
+    
+    int wt[n], val[n], i;
+    for (int i = 0; i < n; i++) 
+    {
+    printf("Enter value and weight: ");
+    scanf("%d %d",  &val[i], &wt[i]);
     }
 
     int max_val = knapsack(W, wt, val, n);
